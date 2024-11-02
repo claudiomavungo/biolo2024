@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #143d59;
+    height: 50px;
+    align-items: center;
+    color: white;
+    margin: 0;
+}
+.middle-section{
+    display: flex;
+    flex: 1;
+  
+}
+.middle-section input{
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    max-width: 400px;
+    border: none;
+}
+.middle-section button{
+    background-color: #f4b41a;
+    border: none;
+    
+}
+.left-section{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+    
+}
+.biolo{
+    margin-left: 70px;
+}
+.produto{
+    margin: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(150, 150, 150, 0.192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.produto .produto-name{
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+}
+.produto .produto-name:hover{
+    color: #f4b41a;
+}
+ .img-produto{
+    width: 250px;
+    height: 250px;
+    object-fit: contain
+    ;
+
+}
+.produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    
+    
+}
+@media(max-width: 750px){
+    .produtos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 500px){
+    .produtos{
+        grid-template-columns:  1fr;
+    }
+}
+@media(min-width: 1000px){
+    .produtos{
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+    }
+}
+.produto-price{
+    margin: 5px;
+}
+.lupa{
+    width: 20px;
+    filter: invert(100%) sepia(8%) saturate(31%) hue-rotate(342deg) brightness(108%) contrast(107%);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.cardapio{
+    width: 20px;
+    filter: invert(100%) sepia(8%) saturate(31%) hue-rotate(342deg) brightness(108%) contrast(107%);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.carrinho{
+    margin-right: 13px;
+    width: 25px;
+    filter: invert(100%) sepia(8%) saturate(31%) hue-rotate(342deg) brightness(108%) contrast(107%);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.left-section div{
+    margin-right: 5px;
+    font-size: 23px;
+    font-weight: 700;
+}
+.right-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+.right-section div{
+    margin-right: 5px;
+}
+.add-to-cart{
+    background-color: #f4b41a;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 4px;
+    margin-bottom: 4px;
+}
